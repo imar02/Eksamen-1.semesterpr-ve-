@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HOME</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+           function toggleMobile()
+{
+  var mobileUl = document.getElementById("main-header-ul");
+  var hasClass = (mobileUl.className != "");
+  var newClass = (hasClass ? "" : "show");
+  mobileUl.className = newClass;
+}
+
+        </script>
+    </head>
+<body>
+    <header class="topnav">
+            <div>
+                IMAR.DK
+            </div>
+        <nav>
+            <button class="btn-mobile" onclick="toggleMobile()">☰</button>
+            <ul id="main-header-ul">
+                <!-- Her er min navigationsbar på webversion -->
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./AboutMe.html">ABOUT ME</a></li>
+                <li><a href="./Portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./Contact.html">CONTACT</a></li>
+              <li class="mobile-li"><button onclick="toggleMobile()">Close menu</button></li>
+
+            </ul>
+          </nav>
+    </header>
+
+        <h1 class="Main-header">HOME</h1>
+<!-- Her har jeg lavet en box som man skal bruge til at navigere væk fra 'home' siden. -->
+ <nav class="box">
+    <h2><a href="index.html">HOME</a></h2>
+    <h2><a href="AboutMe.html">ABOUT ME</a></h2>
+    <h2><a href="Portfolio.html">PORTFOLIO</a></h2>
+    <h2><a href="Contact.html">CONTACT</a></h2>
+</nav>
+        
+    <footer class="footer">
+        <h3>IMAR.DK</h3>
+        <h3>CONTACT</h3>
+        <p>+45 12 34 56 78</p>
+        <p>CONTACT@IMAR.DK</p>
+             <img src="Images/SoMe.png" alt="SoMe">
+    </footer>
+</body>
+</html>
